@@ -56,6 +56,14 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    width: 1440px;
+    height: 72px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
+    z-index: 999;
 }
 
 .header-container {
@@ -268,7 +276,14 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-bottom: 8px;
+
 }
+
+/* .features-list-link:hover,
+.features-list-link:focus {
+    color: #4d5ae5;
+} */
+
 
 /* #endregion Features */
 
@@ -341,6 +356,23 @@ margin-bottom: 8px;
     column-gap: 24px;
 }
 
+        .team-socmedia-list-link {
+            width: 40px;
+            height: 40px;
+            background-color: #4d5ae5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            fill: #fff;
+        }
+    
+        .team-socmedia-list-link:hover,
+        .team-socmedia-list-link:focus {
+            background-color: #404bbf;
+    
+        }
+
 
 /* #endregion Team */
 
@@ -396,6 +428,38 @@ margin-bottom: 8px;
     border-top: none;
 
 }
+
+.text-info {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+    
+}
+
+.owerlay {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: background-color;
+    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 250ms;
+
+}
+
+.owerlay:hover,
+.owerlay:focus {
+    
+}
+
 
 /* #endregion Portfolio */
 
